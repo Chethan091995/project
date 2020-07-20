@@ -3,10 +3,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("hello world")#HttpResponse(HTML tag as an argument)
-
-def home(request):
-    return HttpResponse("<h1>Welcome to homepage<h1>")
-
-def Demo(request):
-    return render(request,"sample.html")
+    return HttpResponse("hello world")
+def demo(request):
+    return render(request,"demo1.html")
+def demo2(request):
+    return render(request,"directory/demo2.html")
